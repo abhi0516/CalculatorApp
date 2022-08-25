@@ -71,12 +71,14 @@ public class MainActivity extends AppCompatActivity {
 
         int degrees = Integer.parseInt(trigDegreesET.getText().toString());
 
+
         double radians = Math.toRadians(degrees);
 
         // sin() method to get the sine value
         double sinValue = Math.sin(radians);
+        double roundedSinValue = (double) Math.round(sinValue * 100) / 100;
 
-        numberSumTV.setText("sin(" + degrees + ") = " + sinValue);
+        numberSumTV.setText("sin(" + degrees + ") = " + roundedSinValue);
     }
 
     public void findCos(View view) {
