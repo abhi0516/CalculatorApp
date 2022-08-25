@@ -27,66 +27,68 @@
                     android:layout_height="match_parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0"
+                    app:layout_constraintVertical_bias="0.0"
                     tools:context=".MainActivity">
 
                     <Button
                         android:id="@+id/sin3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="findSum"
+                        android:layout_width="125dp"
+                        android:layout_height="52dp"
+                        android:onClick="findTan"
                         android:text="tan(x°)"
-                        android:textSize="34sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.581"
+                        app:layout_constraintHorizontal_bias="0.944"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.858" />
+                        app:layout_constraintVertical_bias="0.555" />
 
                     <Button
                         android:id="@+id/sin2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="findSum"
-                        android:text="cos(x°)"
-                        android:textSize="34sp"
+                        android:layout_width="127dp"
+                        android:layout_height="53dp"
+                        android:onClick="findCos"
+                        android:text="COS(x°)"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.934"
+                        app:layout_constraintHorizontal_bias="0.464"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.704" />
+                        app:layout_constraintVertical_bias="0.556" />
 
                     <EditText
                         android:id="@+id/trigDegreesET"
-                        android:layout_width="259dp"
-                        android:layout_height="50dp"
+                        android:layout_width="353dp"
+                        android:layout_height="52dp"
                         android:ems="10"
                         android:hint="Enter Degrees for Trig Function"
                         android:inputType="textPersonName"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.194" />
+                        app:layout_constraintVertical_bias="0.157" />
 
                     <Button
                         android:id="@+id/sin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="findSum"
+                        android:layout_width="111dp"
+                        android:layout_height="53dp"
+                        android:onClick="findSin"
                         android:text="sin(x°)"
-                        android:textSize="34sp"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.154"
+                        app:layout_constraintHorizontal_bias="0.013"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.706" />
+                        app:layout_constraintVertical_bias="0.556" />
 
                     <Button
                         android:id="@+id/subtraction"
@@ -97,7 +99,7 @@
                         android:textSize="34sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.786"
+                        app:layout_constraintHorizontal_bias="0.356"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.418" />
@@ -111,7 +113,7 @@
                         android:textSize="34sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.229"
+                        app:layout_constraintHorizontal_bias="0.012"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.418" />
@@ -125,10 +127,10 @@
                         android:textSize="34sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.229"
+                        app:layout_constraintHorizontal_bias="0.671"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.566" />
+                        app:layout_constraintVertical_bias="0.418" />
 
                     <Button
                         android:id="@+id/division"
@@ -139,45 +141,51 @@
                         android:textSize="34sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.786"
+                        app:layout_constraintHorizontal_bias="0.984"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.565" />
+                        app:layout_constraintVertical_bias="0.418" />
 
                     <EditText
                         android:id="@+id/num1ET"
-                        android:layout_width="149dp"
-                        android:layout_height="38dp"
+                        android:layout_width="169dp"
+                        android:layout_height="57dp"
                         android:ems="10"
                         android:hint="Enter first number here"
                         android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.145"
+                        app:layout_constraintHorizontal_bias="0.066"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.09" />
+                        app:layout_constraintVertical_bias="0.029" />
 
                     <EditText
                         android:id="@+id/num2ET"
-                        android:layout_width="132dp"
-                        android:layout_height="36dp"
+                        android:layout_width="169dp"
+                        android:layout_height="56dp"
                         android:ems="10"
                         android:hint="Enter second number here"
                         android:inputType="textPersonName"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.813"
+                        app:layout_constraintHorizontal_bias="0.933"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.095" />
+                        app:layout_constraintVertical_bias="0.029" />
 
                     <TextView
                         android:id="@+id/resultTV"
-                        android:layout_width="97dp"
-                        android:layout_height="42dp"
-                        android:text="answer"
+                        android:layout_width="375dp"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#EFEFEF"
                         android:textSize="24sp"
+                        android:textStyle="bold|italic"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
