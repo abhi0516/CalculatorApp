@@ -10,6 +10,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //***Sources****
+    //https://stackoverflow.com/questions/11701399/round-up-to-2-decimal-places-in-java
+    //https://www.geeksforgeeks.org/trigonometric-functions-in-java-with-examples/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
