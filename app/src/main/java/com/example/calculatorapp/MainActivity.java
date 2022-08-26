@@ -24,8 +24,10 @@ public class MainActivity extends AppCompatActivity {
         double num1 = Double.parseDouble(number1ET.getText().toString());
         double num2 = Double.parseDouble(number2ET.getText().toString());
         double sum = num1 + num2;
+        double roundedSumValue = (double) Math.round(sum * 100) / 100;
 
-        numberSumTV.setText("" + sum);
+
+        numberSumTV.setText("   " + roundedSumValue);
     }
 
     public void findDifference(View view) {
@@ -36,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
         double num1 = Double.parseDouble(number1ET.getText().toString());
         double num2 = Double.parseDouble(number2ET.getText().toString());
         double diff = num1 - num2;
+        double roundedDiffValue = (double) Math.round(diff * 100) / 100;
 
-        numberSumTV.setText("" + diff);
+
+        numberSumTV.setText("   " + roundedDiffValue);
     }
 
     public void findProduct(View view) {
@@ -48,8 +52,9 @@ public class MainActivity extends AppCompatActivity {
         double num1 = Double.parseDouble(number1ET.getText().toString());
         double num2 = Double.parseDouble(number2ET.getText().toString());
         double product = num1 * num2;
+        double roundedProductValue = (double) Math.round(product * 100) / 100;
 
-        numberSumTV.setText("" + product);
+        numberSumTV.setText("   " + roundedProductValue);
     }
 
     public void findQuotient(View view) {
@@ -60,8 +65,10 @@ public class MainActivity extends AppCompatActivity {
         double num1 = Double.parseDouble(number1ET.getText().toString());
         double num2 = Double.parseDouble(number2ET.getText().toString());
         double quotient = num1 / num2;
+        double roundedQuotientValue = (double) Math.round(quotient * 100) / 100;
 
-        numberQuotientTV.setText("" + quotient);
+
+        numberQuotientTV.setText("   " + roundedQuotientValue);
     }
 
 
@@ -78,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         double sinValue = Math.sin(radians);
         double roundedSinValue = (double) Math.round(sinValue * 100) / 100;
 
-        numberSumTV.setText("sin(" + degrees + ") = " + roundedSinValue);
+        numberSumTV.setText("   sin(" + degrees + ") = " + roundedSinValue);
     }
 
     public void findCos(View view) {
@@ -92,7 +99,9 @@ public class MainActivity extends AppCompatActivity {
         // cos() method to get the sine value
         double cosValue = Math.cos(radians);
 
-        numberSumTV.setText("cos(" + degrees + ") = " + cosValue);
+        double roundedCosValue = (double) Math.round(cosValue * 100) / 100;
+
+        numberSumTV.setText("   cos(" + degrees + ") = " + roundedCosValue);
     }
 
     public void findTan(View view) {
@@ -105,8 +114,9 @@ public class MainActivity extends AppCompatActivity {
 
         // tan() method to get the sine value
         double tanValue = Math.tan(radians);
+        double roundedTanValue = (double) Math.round(tanValue * 100) / 100;
 
-        numberSumTV.setText("tan(" + degrees + ") = " + tanValue);
+        numberSumTV.setText("   tan(" + degrees + ") = " + roundedTanValue);
     }
 
 }
